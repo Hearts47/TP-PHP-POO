@@ -40,7 +40,6 @@ class Moto extends Vehicule
 
 $moto1 = new Moto("Yamaha");
 $voiture1 = new Voiture("Toyota");
-
 $moto1->demarrer();
 $voiture1->demarrer();
 $moto1->mettreBequille();
