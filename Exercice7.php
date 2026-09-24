@@ -17,7 +17,7 @@ class SMS implements Notification
 {
     public function envoyer(string $message): void
     {
-        echo "SMS :" . $message . "<br>";
+        echo "SMS : " . $message . "<br>";
     }
 }
 
@@ -45,7 +45,10 @@ $sms = new SMS();
 envoyerNotification($email, "Creation du compte terminee.");
 envoyerNotification($sms, "Creation du compte terminee.");
 
+$push = new NotificationPush();
+envoyerNotification($push, "Creation du compte terminee.");
 
-//L'exemple de notificationpush illustre le polymorphisme car la fonction envoyerNotification peut accepter n'importe quelle classe qui implémente l'interface Notification.
-
+// Non, je n'ai pas eu besoin de modifier envoyerNotification() pour ajouter NotificationPush.
+// Cela illustre le polymorphisme : la fonction traite tout objet qui implémente Notification
+// de la même façon, sans se soucier de sa classe réelle.
 ?>
