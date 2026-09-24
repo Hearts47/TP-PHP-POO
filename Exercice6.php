@@ -30,3 +30,6 @@ $smsNotification->envoyer("Votre commande est prête.");
 
 
 // une interface peut être considérée comme un contrat car elle définit un ensemble de méthodes que les classes qui l'implémentent doivent obligatoirement fournir.
+
+
+?>²
